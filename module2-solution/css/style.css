@@ -11,12 +11,12 @@ h1 {
 	margin-bottom: 10px;
 }
 div {
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	width: 100%;
 	padding-left: 4%;
 	padding-right: 1%;
 
-	align-items: center;
+	/*align-items: center;*/
 }
 section {
 	background-color: lightgrey;
