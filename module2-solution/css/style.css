@@ -5,76 +5,86 @@
 	padding: 0;
 }
 h1 {
-	margin-left: 40%;
+	text-align: center;
+	font-style: bold;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 div {
-	background-color: grey;
 	border: 1px solid black;
-	width: 350px;
-	height: 250px;
-	margin-left: 30px;
-	margin-right: 30px;
-	margin-top: 20px;
-	float: left;
-}
-/*
-#box1 {
-	float: left;
-}
-#box2 {
-	float: right;
-}
-#box3 {
-	float: right;
-}*/
+	width: 100%;
+	padding-left: 4%;
+	padding-right: 1%;
 
-p {
+	align-items: center;
+}
+section {
+	background-color: lightgrey;
+	border: 1px solid black;
+
+	width: 33.3%;
+	margin: 1%;
+
+	overflow: hidden;
+	position: relative;
+	float: left;
+}
+p.content {
+	clear: both;
+
+	padding: 15px;
+	text-align: justify;
+}
+p.menu {
   	border: 1px solid black;
+  	text-align: center;
+  	padding: 5px;
+
+  	float: right;
   	position: relative;
-	right: 0;
-	top: 0;	
-	margin-right: 10px;
  }
 
 #p1 {
-	background-color: pink;
-	
+	background-color: lightpink;
 }
 #p2 {
 	background-color: red;
-	
 }
 #p3 {
 	background-color: yellow;
-	
-}
-
-section {
-	clear: both;
 }
 
 /********* PC *********/
 @media (min-width: 992px) {
 	#box1, #box2, #box3 {
-		width: 350px;
+		width: 30%;
+		float: left;
 	}
 }
 
 /********* Tablet *********/
 @media (min-width: 768px) and (max-width: 991px) {
+	div {
+		padding-left: 10%;
+		padding-right: 1%;
+	}
 	#box1 {
-		width: 300px;
+		width: 40%;
 	}
 	#box2 {
-		width: 300px;
+		width: 40%;
 	}
 	#box3 {
-		width: 700px;
+		width: 82.5%;
 	}
 }
 
 /********* Mobile *********/
 @media (max-width: 767px) {
+	div {
+		padding-left: 13%;
+		padding-right: 1%;
+	}	
 	#box1, #box2, #box3 {
 		width: 80%
 	}
