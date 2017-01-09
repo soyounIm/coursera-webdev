@@ -1,0 +1,134 @@
+body {
+  font-size: 16px;
+  color: #000;
+  font-family: 'Oxygen', sans-serif;
+}
+#header-nav {
+	background-color: #f6b319;
+	border-radius: 0;
+	border: 0;
+}
+.navbar-brand {
+	padding-top: 20px;
+}
+.navbar-brand h1 {
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+ /* text-shadow: 1px 1px 1px #222;*/
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brank a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+#nav-list {
+  margin-top: 25px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/***** END HEAD ******/
+
+/***** BEGIN MAIN *****/
+h2 {
+	color: darkblue;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#menu-title {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: red;
+
+	margin: 0px auto 10px;
+  	text-align: center;
+  	line-height: .80;
+}
+#main-content {
+	background-color: lightgrey;
+	border: 1px solid black;
+
+	width: 100%;
+	
+	padding: 15px;
+	margin: 0 auto 10px;
+
+	position: relative;
+	float: left;
+}
+#menu-description {
+	overflow: scroll;
+}
+/***** END MAIN *****/
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+	.nav { 
+		display: none;
+	}
+	.container {
+		width: 100%;
+	}
+	#menu-description {
+		height: auto;
+	}
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+	.nav { 
+		display: none;
+	}
+	.container {
+		width: 95%;
+	}
+	#menu-description {
+		height: 400px;
+	}
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	.nav { 
+		display: none;
+	}
+	.container {
+		width: 90%;
+	}
+	#menu-description {
+		height: 300px;
+	}
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+	.navbar-brand h1 {
+		font-size: 5vw;
+	}
+	.container {
+		width: 90%;
+	}
+	#menu-description {
+		height: 300px;
+		font-size: .9em;
+	}
+}
